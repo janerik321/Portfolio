@@ -22,18 +22,26 @@
           <h1>Hei, jeg heter Jan Erik</h1>
           <h2>Frontend-utvikler</h2>
         </div>
-        <a href="#about-me"> <button id="about-me-button">Om meg</button></a>
+        <a href="#about-me" id="about-me-button">Om meg</a>
       </hero>
       <nav id="nav-bar">
         <div id="about-projects">
-          <button><img src="img/user.svg" alt="" />Om meg</button>
-          <button><img src="img/projects.svg" alt="" />Prosjekter</button>
+          <a href="#about-me"><img src="img/user.svg" alt="" />Om meg</a>
+          <a href="#projects"
+            ><img src="img/projects.svg" alt="" />Prosjekter</a
+          >
         </div>
-        <div id="github-cv-contact"></div>
+        <div id="github-cv-contact">
+          <a href="https://github.com/janerik321"
+            ><img src="img/github.svg" alt="" />GitHub</a
+          >
+          <a href=""><img src="img/download.svg" alt="" />CV</a>
+          <a href="#contact"><img src="img/mail.svg" alt="" />Kontakt</a>
+        </div>
       </nav>
 
       <about id="about-me">
-        <div>
+        <div id="picture-pitch">
           <img
             id="portfolio-picture"
             src="img/1000007982.jpg"
@@ -66,8 +74,38 @@
             </p>
           </div>
         </div>
+        <div id="skills-div">
+          <h3>Ting jeg kan</h3>
+          <div id="skills">
+            <div>
+              <img src="img/html.svg" alt="" />
+              <h4>HTML</h4>
+            </div>
+            <div>
+              <img src="img/css.svg" alt="" />
+              <h4>CSS</h4>
+            </div>
+            <div>
+              <img src="img/js.svg" alt="" />
+              <h4>JavaScript</h4>
+            </div>
+            <div>
+              <img src="img/react.svg" alt="" />
+              <h4>React</h4>
+            </div>
+            <div>
+              <img src="img/figma.svg" alt="" />
+              <h4>Figma</h4>
+            </div>
+          </div>
+        </div>
       </about>
+      <projects> </projects>
     </main>
-    <footer></footer>
+    <footer id="contact">
+      <p>Kontaktinfo</p>
+      <a href="mailto:janerik.kodehode@gmail.com">janerik.kodehode@gmail.com</a>
+      <p>tlf: 92219792</p>
+    </footer>
   </body>
 </html>
