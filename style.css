@@ -140,12 +140,33 @@ about p {
   gap: 1rem;
 }
 
+#skills div {
+  text-align: center;
+}
+
 projects {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
+.project-card {
+  width: 300px;
+  height: 275px;
+  background-size: cover;
+}
+
+.project-card img {
+  width: 24px;
+}
+
+#eggman {
+  background-image: url(img/eggman.png);
+}
+
+/*  */
 footer {
   background-color: #242424f8;
   text-align: right;
