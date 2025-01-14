@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Albert Sans", serif;
+  color: #ffffffcd;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+main {
+  background-color: #022638;
+}
+hero {
+  display: flex;
+  height: 100vh;
+  background-image: url(img/hero.png);
+  background-size: cover;
+  background-position: bottom;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+hero * {
+  /* color: #ececec; */
+  font-weight: 300;
+}
+
+hero div {
+  text-align: center;
+}
+
+#about-me-button {
+  border: none;
+  background-color: #fff3;
+  font-size: 1.5rem;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition-duration: 300ms;
+}
+
+#about-me-button:hover {
+  background-color: #fff5;
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  background-color: #242424f8;
+  padding: 0.5rem 0;
+}
+
+#nav-bar > * {
+  display: flex;
+  gap: 0 1.5rem;
+}
+
+#nav-bar * {
+  background-color: #0000;
+  border: none;
+}
+
+#nav-bar button {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 0 0.3rem;
+}
+
+#nav-bar img {
+  filter: invert() opacity(0.8);
+}
+
+about > div {
+  display: flex;
+  gap: 6.25rem;
+}
+
+about p {
+  margin: 1rem 0;
+}
+
+#portfolio-picture {
+  max-width: 325px;
+}
