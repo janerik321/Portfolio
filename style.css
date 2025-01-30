@@ -36,7 +36,7 @@ main {
 }
 hero {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   background-image: url(img/hero.png);
   background-size: cover;
   background-position: bottom;
@@ -68,18 +68,24 @@ hero div {
   background-color: #fff5;
 }
 
+/* Nav bar */
+
 #nav-bar {
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
+  padding: 0 14vw;
   gap: 1.5rem;
+  flex-wrap: wrap;
   background-color: #242424f8;
+  z-index: 1;
 }
 
 #nav-bar > * {
   display: flex;
   gap: 0 1.5rem;
+  flex-wrap: wrap;
 }
 
 #nav-bar a {
@@ -89,6 +95,7 @@ hero div {
   padding: 0.5rem 0;
   gap: 0 0.3rem;
   transition-duration: 150ms;
+  /* margin: auto; */
 }
 
 #nav-bar a:hover {
@@ -99,32 +106,47 @@ hero div {
   }
 }
 
+#about-projects {
+  /* margin-right: auto; */
+}
+
 #nav-bar img {
   filter: invert() opacity(0.8);
 }
 
-about {
-  height: 100vh;
+/* About */
+
+#about-me {
+  /* height: 100vh; */
   /* display: inline-block; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem 14vw;
 }
 
 #picture-pitch {
   display: flex;
-  gap: 6.25rem;
+  gap: 7vw;
+  margin: 3rem 0;
+}
+
+#picture-pitch > div {
+  /* width: 50%; */
 }
 
 #portfolio-picture {
-  max-width: 325px;
-  max-height: 433px;
+  /* max-width: 325px; */
 
-  /* aspect-ratio: ; */
+  max-height: 433px;
+  /* width: auto; */
+  object-fit: contain;
+  /* height: auto; */
+  max-width: 40%;
 }
 
-about p {
+#about-me p {
   margin: 1rem 0;
 }
 
@@ -137,29 +159,41 @@ about p {
 
 #skills {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  /* margin: auto; */
+  gap: 2rem;
 }
 
 #skills div {
   text-align: center;
+  margin: auto;
 }
 
-projects {
+/* Projects */
+
+#projects {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: center;
   justify-content: center;
+  padding: 4rem 14vw;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 2rem;
 }
 
 .project-card {
   width: 300px;
   height: 275px;
-  background-size: cover;
-  /* background-color: darkblue; */
-  border: 1px solid white;
   border-radius: 5px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .tools-description {
@@ -168,6 +202,7 @@ projects {
   flex-direction: column;
   justify-content: end;
   align-items: end;
+  background-size: cover;
 }
 
 .tools-used {
@@ -175,6 +210,7 @@ projects {
   background-color: rgba(02, 38, 56, 0.7);
   padding: 5px;
   border-top-left-radius: 4px;
+
   transition-duration: 300ms;
 }
 
@@ -194,14 +230,13 @@ projects {
   margin-bottom: 5px;
 }
 
-#eggman > .tools-description {
-  background-image: url(img/eggman.png);
-}
-
 .project-links {
+  height: 48px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
+
+  /* margin-top: 5px; */
 }
 
 .project-links > a {
@@ -213,6 +248,7 @@ projects {
   align-items: center;
   gap: 5px;
   padding: 5px 0;
+
   transition-duration: 150ms;
   /* font-size: 1rem; */
 }
@@ -227,18 +263,48 @@ projects {
 .tools-description:hover {
   .tools-used {
     opacity: 1;
+    backdrop-filter: blur(2px);
   }
   .project-description {
     height: 117px;
+    backdrop-filter: blur(2px);
   }
 }
 
-/*  */
+.invert img {
+  filter: invert() brightness(0.8);
+}
+
+#eggman > .tools-description {
+  background-image: url(img/eggman.png);
+}
+
+#drumkit > .tools-description {
+  background-image: url(img/drumkit.png);
+}
+
+#weather-api > .tools-description {
+  background-image: url(img/weather-api.png);
+}
+
+#fireworks-cannon > .tools-description {
+  background-image: url(img/fireworks-cannon.png);
+}
+
+#react-wishlist > .tools-description {
+  background-image: url(img/react-wishlist.png);
+}
+
+#recipe-shopper > .tools-description {
+  background-image: url(img/recipe-shopper.png);
+}
+
+/* Footer */
 footer {
-  background-color: #242424f8;
+  background-color: #242424;
   text-align: right;
   line-height: 3rem;
-  padding: 3rem;
+  padding: 3rem 14vw;
   font-size: 1.25rem;
 }
 

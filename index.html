@@ -38,17 +38,21 @@
           <a href="https://github.com/janerik321"
             ><img src="img/github.svg" alt="" />GitHub</a
           >
-          <a href=""><img src="img/download.svg" alt="" />CV</a>
+          <a
+            href="https://docs.google.com/document/d/1rgCBf-KopZ1rzxrpV1xuKtd_3JNOQPff/edit?usp=sharing&ouid=104115780669243585744&rtpof=true&sd=true"
+            target="_blank"
+            ><img src="img/download.svg" alt="" />CV</a
+          >
           <a href="#contact"><img src="img/mail.svg" alt="" />Kontakt</a>
         </div>
       </nav>
 
       <!-- About me -->
-      <about id="about-me">
+      <section id="about-me">
         <div id="picture-pitch">
           <img
             id="portfolio-picture"
-            src="img/1000007982.jpg"
+            src="img/1000007982.png"
             alt="A picture of Jan Erik"
           />
           <div>
@@ -103,40 +107,190 @@
             </div>
           </div>
         </div>
-      </about>
+      </section>
 
       <!-- Projects -->
-      <projects id="projects">
+      <section id="projects">
         <h2>Prosjekter</h2>
-
-        <div class="project-card" id="eggman">
-          <div class="tools-description">
-            <div class="tools-used">
-              <img src="img/figma.svg" alt="Figma" />
+        <div id="projects-container">
+          <!-- Weather API -->
+          <div class="project-card" id="weather-api">
+            <div class="tools-description">
+              <div class="tools-used">
+                <img src="img/html.svg" alt="HTML" />
+                <img src="img/css.svg" alt="CSS" />
+                <img src="img/js.svg" alt="JavaScript" />
+                <img src="img/figma.svg" alt="Figma" />
+              </div>
+              <div class="project-description">
+                <h4>Weather API</h4>
+                <p>Været for de neste dagene.</p>
+                <p>
+                  En "app" som bruker værdata fra en vær-API. Laget med HTML,
+                  CSS og Javascript.
+                </p>
+              </div>
             </div>
-            <div class="project-description">
-              <h4>Eggman</h4>
-              <p>En fiktiv nettbutikk designet i Figma.</p>
-              <p>Komplett med AI-genererte gitarer og effektpedaler</p>
+            <div class="project-links invert">
+              <a
+                href="https://github.com/janerik321/API-assignment"
+                target="_blank"
+                ><img src="img/github.svg" alt="" />Repo</a
+              >
+              <a
+                href="https://janerik321.github.io/API-assignment/"
+                target="_blank"
+                ><img src="img/live.svg" alt="" />Live</a
+              >
             </div>
           </div>
-          <div class="project-links">
-            <a
-              href="https://www.figma.com/proto/m33QEKCp5aQAHlYHL31IL3/Figma-Advanced-Assignment-1?node-id=30-66&node-type=frame&t=dVdd1g8go64qAVkK-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A66&hide-ui=1"
-              ><img src="img/figma.svg" alt="" />Figma</a
-            >
+
+          <!-- Eggman -->
+          <div class="project-card" id="eggman">
+            <div class="tools-description">
+              <div class="tools-used">
+                <img src="img/figma.svg" alt="Figma" />
+              </div>
+              <div class="project-description">
+                <h4>Eggman</h4>
+                <p>En fiktiv nettbutikk designet i Figma.</p>
+                <p>Komplett med AI-genererte gitarer og effektpedaler</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://www.figma.com/proto/m33QEKCp5aQAHlYHL31IL3/Figma-Advanced-Assignment-1?node-id=30-66&node-type=frame&t=dVdd1g8go64qAVkK-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A66&hide-ui=1"
+                target="_blank"
+                ><img src="img/figma.svg" alt="" />Figma</a
+              >
+            </div>
+          </div>
+
+          <!-- Fireworks Cannon -->
+          <div class="project-card" id="fireworks-cannon">
+            <div class="tools-description">
+              <div class="tools-used">
+                <img src="img/html.svg" alt="HTML" />
+                <img src="img/css.svg" alt="CSS" />
+                <img src="img/js.svg" alt="JavaScript" />
+              </div>
+              <div class="project-description">
+                <h4>Fireworks Cannon</h4>
+                <p>Skyt fyrverkeri fra en kanon!</p>
+                <p>Prosjektet bruker npm-pakker for fyrverkeri og stjerner.</p>
+              </div>
+            </div>
+            <div class="project-links invert">
+              <a
+                href="https://github.com/janerik321/vitenpmprosjekt"
+                target="_blank"
+                ><img src="img/github.svg" alt="" />Repo</a
+              >
+              <a
+                href="https://janerik321.github.io/vitenpmprosjekt/"
+                target="_blank"
+                ><img src="img/live.svg" alt="" />Live</a
+              >
+            </div>
+          </div>
+
+          <!-- React Wishlist -->
+          <div class="project-card" id="react-wishlist">
+            <div class="tools-description">
+              <div class="tools-used">
+                <img src="img/html.svg" alt="HTML" />
+                <img src="img/css.svg" alt="CSS" />
+                <img src="img/js.svg" alt="JavaScript" />
+                <img src="img/react.svg" alt="React" />
+              </div>
+              <div class="project-description">
+                <h4>React Wishlist</h4>
+                <p>Ønskelister til jul.</p>
+                <p>
+                  Animerte ønskelister generert fra et object array. Laget i
+                  React med Styled Components.
+                </p>
+              </div>
+            </div>
+            <div class="project-links invert">
+              <a
+                href="https://github.com/janerik321/react-wishlist"
+                target="_blank"
+                ><img src="img/github.svg" alt="" />Repo</a
+              >
+              <a
+                href="https://janerik321.github.io/react-wishlist/"
+                target="_blank"
+                ><img src="img/live.svg" alt="" />Live</a
+              >
+            </div>
+          </div>
+
+          <!-- Drumkit -->
+          <div class="project-card" id="drumkit">
+            <div class="tools-description">
+              <div class="tools-used">
+                <img src="img/html.svg" alt="HTML" />
+                <img src="img/css.svg" alt="CSS" />
+                <img src="img/js.svg" alt="JavaScript" />
+              </div>
+              <div class="project-description">
+                <h4>Drumkit</h4>
+                <p>Trommesett laget i JavaScript.</p>
+                <p>
+                  Bruk tastatur eller klikk på sirklene for å spille av
+                  trommelyder.
+                </p>
+              </div>
+            </div>
+            <div class="project-links invert">
+              <a
+                href="https://github.com/janerik321/drumkit-assignment"
+                target="_blank"
+                ><img src="img/github.svg" alt="" />Repo</a
+              >
+              <a
+                href="https://janerik321.github.io/drumkit-assignment/"
+                target="_blank"
+                ><img src="img/live.svg" alt="" />Live</a
+              >
+            </div>
+          </div>
+
+          <!-- Recipe Shopper -->
+          <div class="project-card" id="recipe-shopper">
+            <div class="tools-description">
+              <div class="tools-used">
+                <img src="img/html.svg" alt="HTML" />
+                <img src="img/css.svg" alt="CSS" />
+                <img src="img/js.svg" alt="JavaScript" />
+                <img src="img/figma.svg" alt="Figma" />
+              </div>
+              <div class="project-description">
+                <h4>Recipe Shopper</h4>
+                <p>Legg oppskrifter rett inn i handlelisten.</p>
+                <p>
+                  Legg inn oppskrifter og legg ingrediensene til handlelisten
+                  med ett klikk.
+                </p>
+              </div>
+            </div>
+            <div class="project-links invert">
+              <a
+                href="https://github.com/janerik321/user-data-assignment"
+                target="_blank"
+                ><img src="img/github.svg" alt="" />Repo</a
+              >
+              <a
+                href="https://janerik321.github.io/user-data-assignment"
+                target="_blank"
+                ><img src="img/live.svg" alt="" />Live</a
+              >
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="project-card" id="">
-          <div class="tools-used"></div>
-          <div class="project-description">
-            <h4></h4>
-            <p></p>
-          </div>
-          <div class="project-links"></div>
-        </div>
-      </projects>
       <!-- End projects -->
     </main>
     <footer id="contact">
