@@ -27,10 +27,6 @@ h4 {
   font-weight: 400;
 }
 
-/* button:hover {
-  cursor: pointer;
-} */
-
 main {
   background-color: #022638;
 }
@@ -47,7 +43,6 @@ main {
 }
 
 #hero * {
-  /* color: #ececec; */
   font-weight: 300;
 }
 
@@ -95,19 +90,26 @@ main {
   padding: 0.5rem 0;
   gap: 0 0.3rem;
   transition-duration: 150ms;
-  /* margin: auto; */
 }
 
 #nav-bar a:hover {
-  padding: 0.3rem 0 0.7rem 0;
+  padding: 0 0 5px 0;
   color: #fff;
   img {
     filter: invert() opacity(1);
   }
 }
 
-#about-projects {
-  /* margin-right: auto; */
+#to-top {
+  position: sticky;
+  top: calc(100vh - 35px);
+  left: calc(93vw - 35px);
+  filter: invert() opacity(0.8);
+  transition-duration: 150ms;
+}
+
+#to-top:hover {
+  filter: invert() opacity(1);
 }
 
 #nav-bar img {
@@ -117,8 +119,6 @@ main {
 /* About */
 
 #about-me {
-  /* height: 100vh; */
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,17 +132,9 @@ main {
   margin: 3rem 0;
 }
 
-#picture-pitch > div {
-  /* width: 50%; */
-}
-
 #portfolio-picture {
-  /* max-width: 325px; */
-
   max-height: 433px;
-  /* width: auto; */
   object-fit: contain;
-  /* height: auto; */
   max-width: 40%;
 }
 
@@ -160,7 +152,6 @@ main {
 #skills {
   display: flex;
   flex-wrap: wrap;
-  /* margin: auto; */
   gap: 2rem;
 }
 
@@ -174,7 +165,6 @@ main {
 #projects {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
   align-items: center;
   justify-content: center;
   padding: 4rem 14vw;
@@ -234,8 +224,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* margin-top: 5px; */
 }
 
 .project-links > a {
@@ -249,7 +237,6 @@ main {
   padding: 5px 0;
 
   transition-duration: 150ms;
-  /* font-size: 1rem; */
 }
 
 .project-links > a:hover {
