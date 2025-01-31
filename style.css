@@ -188,14 +188,20 @@ main {
 
 .tools-description {
   height: 227px;
+  background-size: cover;
+}
+
+.blur {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: end;
-  background-size: cover;
+  transition-duration: 300ms;
+  height: 100%;
 }
 
 .tools-used {
+  display: flex;
   opacity: 0;
   background-color: rgba(02, 38, 56, 0.7);
   padding: 5px;
@@ -235,7 +241,6 @@ main {
   align-items: center;
   gap: 5px;
   padding: 5px 0;
-
   transition-duration: 150ms;
 }
 
@@ -254,6 +259,9 @@ main {
   .project-description {
     height: 117px;
     backdrop-filter: blur(2px);
+  }
+  .blur {
+    backdrop-filter: blur(2px) brightness(0.85);
   }
 }
 
