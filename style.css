@@ -207,6 +207,7 @@ main {
   padding: 5px;
   border-top-left-radius: 4px;
   transition-duration: 300ms;
+  margin-bottom: -0.5px;
 }
 
 .project-card img {
