@@ -207,6 +207,7 @@ main {
   padding: 5px;
   border-top-left-radius: 4px;
   transition-duration: 300ms;
+  gap: 5px;
   margin-bottom: -0.5px;
 }
 
@@ -268,6 +269,10 @@ main {
 
 .invert img {
   filter: invert() brightness(0.8);
+}
+
+.icon-border {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #eggman > .tools-description {
