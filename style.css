@@ -275,6 +275,10 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+#gutensearch > .tools-description {
+  background-image: url(img/gutensearch.png);
+}
+
 #eggman > .tools-description {
   background-image: url(img/eggman.png);
 }
